@@ -1,2 +1,2 @@
 # UCLAchallenge3
-HW assignment #3
+Challenge assignment #3
