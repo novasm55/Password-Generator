@@ -24,12 +24,12 @@ var includeNumbers;
 
 // Function to generate a random password
 function generatePassword(length, includeLowercase, includeUppercase, includeNumbers, includeSpecialChars) {
-  length = parseInt(prompt("Choose character length of passowrd between 8 and 100"));
+  length = parseInt(prompt("Select password character length of passowrd between 8 and 128"));
   if (!length){
     alert("This needs a value");
   }
-  else if (length < 8 || length > 100){
-    length = parseInt(prompt("You must choose between 8 and 100"));
+  else if (length < 8 || length > 128){
+    length = parseInt(prompt("Select password character length between 8 and 128"));
   }
   else {
     includeLowercase = confirm ("Include lowerCase characters?");
