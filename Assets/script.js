@@ -24,12 +24,14 @@ var includeNumbers;
 
 // Function to generate a random password
 function generatePassword(length, includeLowercase, includeUppercase, includeNumbers, includeSpecialChars) {
-  length = parseInt(prompt("Select password character length of passowrd between 8 and 128"));
+
+
+if ( 8 < length < 128){
+    length = parseInt(prompt("Select password character length between 8 and 128"));
+  }
+
   if (!length){
     alert("This needs a value");
-  }
-  else if (length < 8 || length > 128){
-    length = parseInt(prompt("Select password character length between 8 and 128"));
   }
   else {
     includeLowercase = confirm ("Include lowerCase characters?");
@@ -44,6 +46,7 @@ function generatePassword(length, includeLowercase, includeUppercase, includeNum
   if (includeNumbers) passwordCharSet += "0123456789";
   if (includeSpecialChars) passwordCharSet += "!@#$%^&*()_+~`|}{[]:;?><,./-=";
 
+  
   var password = ""
   for (let i = 0; i < length; i++) {
     let randomIndex = Math.floor(Math.random() * passwordCharSet.length);
@@ -53,5 +56,5 @@ function generatePassword(length, includeLowercase, includeUppercase, includeNum
 }
 
 // Example usage
-var password = generatePassword(10, true, true, true, true); // Generate a 10-character password with all character types included
-console.log(password); // Output the generated password to the console
+//var password = generatePassword(10, true, true, true, true); // Generate a 10-character password with all character types included
+//console.log(password); // Output the generated password to the console
