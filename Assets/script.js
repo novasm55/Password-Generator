@@ -28,11 +28,11 @@ function generatePassword(length, includeLowercase, includeUppercase, includeNum
 length = parseInt(prompt("Select password character length between 8 and 128"));
 
 if ( length > 128){
-    alert("This needs a value");
+    alert("Character length value must be between 8 and 128");
   }
 
 else if ( length < 8){
-    alert("This needs a value");
+    alert("Character length value must be between 8 and 128");
   }
 
   else {
