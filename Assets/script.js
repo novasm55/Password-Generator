@@ -25,19 +25,21 @@ var includeNumbers;
 // Function to generate a random password
 function generatePassword(length, includeLowercase, includeUppercase, includeNumbers, includeSpecialChars) {
 
+length = parseInt(prompt("Select password character length between 8 and 128"));
 
-if ( 8 < length < 128){
-    length = parseInt(prompt("Select password character length between 8 and 128"));
-  }
-
-  if (!length){
+if ( length > 128){
     alert("This needs a value");
   }
+
+else if ( length < 8){
+    alert("This needs a value");
+  }
+
   else {
     includeLowercase = confirm ("Include lowerCase characters?");
     includeUppercase = confirm("Include upperCase character?");
-    includeSpecialChars = confirm("Include specialChars?")
-    includeNumbers = confirm("Include numbers?")
+    includeSpecialChars = confirm("Include specialChars?");
+    includeNumbers = confirm("Include numbers?");
   }
 
   let passwordCharSet = "";
