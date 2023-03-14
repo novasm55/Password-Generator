@@ -55,6 +55,3 @@ if ( 8 < length < 128){
   return password;
 }
 
-// Example usage
-//var password = generatePassword(10, true, true, true, true); // Generate a 10-character password with all character types included
-//console.log(password); // Output the generated password to the console
