@@ -1,6 +1,6 @@
 # 03 JavaScript: Password Generator
 
-[URL](https://novasm55.github.io/UCLAchallenge3/)
+[URL](https://novasm55.github.io/Password-Generator/)
 
 ## Your Task
 
